@@ -20,5 +20,5 @@ export class ProductComponent  {
 }
 // also lets modify the template of
 // parent "ProductList" to use "product"
- <poduct *ngFor="let product of products" [product]="product">
+<product *ngFor="let product of products" [product]="product">
  </product>
