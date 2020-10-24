@@ -1,9 +1,8 @@
 import { Component, Input } from "@angular/core";
-
 @Component({
-  selector: 'product-list',
+  selector: "shopping-cart",
   template: `
-    <h1>Products List</h1>
+    <h1>Shopping Cart</h1>
     <div *ngFor="let product of products">
       {{ product.name }}
       <div></div>
@@ -11,12 +10,12 @@ import { Component, Input } from "@angular/core";
   `,
   styles: [
     `
-      h1 {
-        font-family: Lato;
+      :host {
+        border: 1px solid #000;
       }
     `
   ]
 })
-export class ProductListComponent {
+export class ShoppingCartComponent {
   @Input() products: any[];
 }
