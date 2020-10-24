@@ -5,7 +5,15 @@ import { Component, Input } from '@angular/core';
   <div>{{product.name}}/<div><button>+</button>
   <div>{{product.price}}/<div>
   `,
-  styles: [`:host{border: 1px solid blue;}]`]
+styles:[`
+:host {
+  display: grid;
+  grid-template-columns: 1fr auto;
+// change the second "1fr" to "auto"
+  grid-column-gap: 10px;
+}
+div:nth-child(1) {font-weight: bold;}
+`]
 })
 export class ProductComponent  {
   @Input() product: any;
