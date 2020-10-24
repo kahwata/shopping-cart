@@ -2,8 +2,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'product',
   template: `
-  <div>{{product.name}}/<div><button>+</button>
-  <div>{{product.price}}/<div>
+  <div>{{product.name}}</<div>
   `,
 styles:[`
 :host {
